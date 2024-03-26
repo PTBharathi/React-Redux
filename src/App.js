@@ -1,6 +1,6 @@
 import './App.css';
-import PostLists from './App/Features/Counter/PostList';
 import Counter from './Components/Counter';
+import PostLists from './Components/Post/PostList';
 
 
 
