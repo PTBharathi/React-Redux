@@ -23,12 +23,13 @@ const PostSlice=createSlice({
             console.log(action);
             state.push(action.payload);
             },
-            prepare(title,post){ //Prepare is callback function use to frontend validation single object data
+            prepare(title,post,userId){ //Prepare is callback function use to frontend validation single object data
                 return{
                     payload:{
                         id:nanoid(),
                         title,
                         post,
+                        userId
                     }
                 }
             }

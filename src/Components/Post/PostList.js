@@ -4,6 +4,7 @@ import { SelectAllPost } from "../../App/Features/poster/posterSlice";
 import { UseDispatch } from "react-redux";
 import { nanoid } from "@reduxjs/toolkit";
 import { postAdd } from "../../App/Features/poster/posterSlice";
+import { selectAllUser } from "../../App/Features/user/userSlice";
 
 
 const PostLists=()=>{
@@ -33,6 +34,14 @@ const PostLists=()=>{
             alert("Pleae Enter The Value")
         }
     }
+
+    const userList=useSelector(selectAllUser);
+
+    // userList.map(item=>{
+    //     console.log(item);
+    // })
+
+    console.log(userList);
 
     return(
         <>
